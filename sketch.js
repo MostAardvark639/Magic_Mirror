@@ -132,14 +132,14 @@ let r_horn_y = positions[0][1]
             endShape()
             pop()
 
-        //  //HAIR 
-        let ratio_hair = hair_PNG.height / hair_PNG.width 
-        let w2 = hair_width
-        let h2 = w2 * ratio_hair
-        image(hair_PNG, positions[19][0] - w2 / 4.5, positions[19][1] - h2 * .5 , hair_width * 5, h2 * 3)
+            //HAIR 
+            let ratio_hair = hair_PNG.height / hair_PNG.width 
+            let w2 = hair_width
+            let h2 = w2 * ratio_hair
+            image(hair_PNG, positions[19][0] - w2 / 4.5, positions[19][1] - h2 * .5 , hair_width * 5, h2 * 3)
 
 
-        //LEFT EYE (my right eye)
+            //LEFT EYE (my right eye)
             push()
           
             strokeWeight(5)
@@ -196,7 +196,7 @@ let r_horn_y = positions[0][1]
         stroke(0, 255, 0)
         strokeWeight(2)
         stroke
-        fill(255)
+        fill(240)
         beginShape()
         let v=0 ;
         
@@ -238,45 +238,6 @@ let r_horn_y = positions[0][1]
             print('facing left')
         }
 
-
-
-
-        // //inner_mouth
-        // push()
-        // strokeWeight(3)
-        // stroke(255, 0, 140)
-        // fill(255, 0, 140)
-        
-        // beginShape()
-        //     let z=0 ;
-
-        // while (z < inner_mouth.length) {
-
-        //     vertex(positions[inner_mouth[z]][0], positions[inner_mouth[z]][1]);
-
-        //     z++
-        // }
-        // endShape(CLOSE)
-        // pop()
-
-
-
-        // //left eyebrow
-        // push()
-        // strokeWeight(8)
-        // stroke(255)
-
-        // beginShape(LINES)
-        // let y=0 ;
-
-        // while (y < left_eyebrow.length) {
-
-        //     vertex(positions[left_eyebrow[y]][0], positions[left_eyebrow[y]][1]);
-
-        //     y++
-        // }
-        // endShape()
-        // pop()
 }
 }
 
