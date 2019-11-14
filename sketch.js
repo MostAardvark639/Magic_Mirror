@@ -35,9 +35,9 @@ function preload() {
 function setup() {
 
 
-    createCanvas(800, 600)
+    createCanvas(windowWidth, windowHeight)
     capture = createCapture(VIDEO)
-    capture.size(800, 600)
+    capture.size(windowWidth, windowHeight)
     capture.hide()
     background(0) 
     //textureWrap(MIRROR)
@@ -52,7 +52,7 @@ function setup() {
 function draw() {    
 
     background(0)
-    image(stars, 0, 0, canvas.Width, canvas.Height)
+    image(stars, 0, 0, windowWidth, windowHeight)
     //image(capture, 0, 0, capture.width, capture.height)
 
     let positions = tracker.getCurrentPosition()
